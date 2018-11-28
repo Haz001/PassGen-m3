@@ -21,5 +21,12 @@ It is a simplistic password genorator
 - 100% random with no check
 - One mode
 - Not commented code
-## Versions:
-<a href="">1.0.0.1m</a>
+## Warning
+No warrenty.
+I am not resposible for any damage that may be caused by this application.
+I can <b>NOT</b> recover passwords made by this application.
+Don't set your twitter or any password to 18446744073709551615.
+## Versions:https://github.com/Haz001/PassGenm/archive/1.0.1m.zip
+<a href="https://github.com/Haz001/PassGenm/releases/download/1.0.1m/passgen1.exe">1.0.0.1m</a>
+## Other info
+You can use any code in this repository, just be nice and add a link or reference me.
