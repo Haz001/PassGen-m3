@@ -30,3 +30,5 @@ Don't set your twitter or any password to 18446744073709551615.
 <a href="https://github.com/Haz001/PassGenm/releases/download/1.0.1m/passgen1.exe">1.0.0.1m</a>
 ## Other info
 You can use any code in this repository, just be nice and add a link or reference me.
+I am planning a Linux release.
+No planned Mac release (but would add link to anyone that ports it)
