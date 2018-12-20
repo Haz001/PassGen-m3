@@ -71,11 +71,11 @@
             this.opt_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.opt_btn.ForeColor = System.Drawing.Color.White;
             this.opt_btn.Location = new System.Drawing.Point(421, 280);
+            this.opt_btn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.opt_btn.Name = "opt_btn";
             this.opt_btn.Size = new System.Drawing.Size(79, 20);
             this.opt_btn.TabIndex = 6;
             this.opt_btn.Text = "Options ⋁";
-            this.opt_btn.Visible = false;
             this.opt_btn.Click += new System.EventHandler(this.opt_btn_Click);
             // 
             // size_btn
@@ -152,7 +152,7 @@
             this.pv_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.pv_tb.Location = new System.Drawing.Point(175, 115);
             this.pv_tb.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pv_tb.MaxLength = 1695;
+            this.pv_tb.MaxLength = 1536;
             this.pv_tb.Name = "pv_tb";
             this.pv_tb.Size = new System.Drawing.Size(275, 40);
             this.pv_tb.TabIndex = 2;
@@ -239,6 +239,7 @@
             this.Name = "FormM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Milli Password Genorator V1";
+            this.Load += new System.EventHandler(this.FormM_Load);
             this.main.ResumeLayout(false);
             this.main.PerformLayout();
             this.ResumeLayout(false);

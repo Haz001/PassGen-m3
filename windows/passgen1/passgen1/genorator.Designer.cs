@@ -38,11 +38,12 @@
             // 
             this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBar1.Location = new System.Drawing.Point(0, 100);
+            this.progressBar1.Location = new System.Drawing.Point(0, 55);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.progressBar1.MarqueeAnimationSpeed = 10;
             this.progressBar1.Maximum = 1000;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 20);
+            this.progressBar1.Size = new System.Drawing.Size(120, 20);
             this.progressBar1.TabIndex = 0;
             // 
             // tick
@@ -68,14 +69,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(100, 120);
+            this.ClientSize = new System.Drawing.Size(120, 75);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "genorator";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "genorator";
-            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.genorator_Load);
             this.Click += new System.EventHandler(this.genorator_Click);
             this.ResumeLayout(false);

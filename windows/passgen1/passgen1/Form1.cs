@@ -31,7 +31,9 @@ namespace passgen1
         private void length_sb_ValueChanged(object sender, EventArgs e)
         {
             _size = Convert.ToUInt64(length_sb.Value);
+            Properties.Settings.Default.Length = _size;
             size_btn.Text = _size.ToString();
+            Properties.Settings.Default.Save();
         }
 
         private void size_btn_Click(object sender, EventArgs e)
@@ -41,6 +43,8 @@ namespace passgen1
             {
                 length_sb.Value = Convert.ToInt32(_size);
             }
+            Properties.Settings.Default.Length = _size;
+            Properties.Settings.Default.Save();
             size_btn.Text = _size.ToString();
         }
 
@@ -83,6 +87,7 @@ namespace passgen1
         }
         public ulong num_input()
         {
+            
             _numd = new input_num();
             _numd._num = _size;
             _numd.l_slider = l_slider;
@@ -90,6 +95,7 @@ namespace passgen1
             if(_numd.l_slider != l_slider)
             {
                 l_slider = _numd.l_slider;
+                Properties.Settings.Default.PB_limit = l_slider;
                 if (l_slider)
                 {
                     length_sb.Minimum = 1;
@@ -101,6 +107,7 @@ namespace passgen1
                     length_sb.Maximum = 128;
                 }
             }
+            Properties.Settings.Default.Save();
             return _numd._num;
         }
 
@@ -136,18 +143,42 @@ namespace passgen1
                 options_pnl.Visible = true;
                 this.Height = 450;
                 options_pnl.Height = 150;
+                opt_btn.Text = "Options /\\";
             }
             else
             {
                 options_pnl.Visible = false;
                 this.Height = 300;
                 options_pnl.Height = 0;
+                opt_btn.Text = "Options \\/";
             }
         }
 
         private void length_sb_Scroll(object sender, ScrollEventArgs e)
         {
 
+        }
+
+        private void FormM_Load(object sender, EventArgs e)
+        {
+            _size = Properties.Settings.Default.Length;
+            size_btn.Text = _size.ToString();
+            l_slider = Properties.Settings.Default.PB_limit;
+            if (l_slider)
+            {
+                length_sb.Minimum = 1;
+                length_sb.Maximum = 2048;
+            }
+            else
+            {
+                length_sb.Minimum = 8;
+                length_sb.Maximum = 128;
+            }
+            if ((Convert.ToUInt64(length_sb.Maximum) >= _size) && (_size >= Convert.ToUInt64(length_sb.Minimum)))
+            {
+                length_sb.Value = Convert.ToInt32(_size);
+            }
+            status_lb.Text = "Loaded Last Settings";
         }
     }
 }

@@ -21,7 +21,7 @@ namespace passgen1
         public string pass_x = "";
         public ulong len = 0;
         private float theta = 0f;
-        Graphics g;
+
 
         public Thread pgen = new Thread(new ThreadStart(passgen));
 
@@ -34,7 +34,6 @@ namespace passgen1
 
         private void genorator_Load(object sender, EventArgs e)
         {
-            g = this.CreateGraphics();
             length = len;
             pgen.Start();
         }
@@ -55,15 +54,12 @@ namespace passgen1
             string percent = "";
             if (length != 0)
             {
-                float x = 0;
-                float y = 0;
+
                 try
                 {
                     progressBar1.Value = (int)((((float)prog / (float)length)) * 1000f);
                     theta = (int)((((float)prog / (float)length)) * 360f);
-                    x = (float)(Math.Sin(theta * (Math.PI / 180f))*50f)+50f;
-                    y = (float)(Math.Cos(theta * (Math.PI / 180f)) * 50f) + 50f;
-                    g.DrawLine(Pens.Red, new Point(50, 50), new PointF(x, y));
+
                     percent = (((((float)prog / (float)length)) * 100f)).ToString();
                 }
                 catch (Exception)

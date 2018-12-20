@@ -11,3 +11,16 @@ C:\Users\Harry\Desktop\GITHUB\-web\m3soft\source\passgen\win\milli\passgen1\pass
 C:\Users\Harry\Desktop\GITHUB\-web\m3soft\source\passgen\win\milli\passgen1\passgen1\obj\Debug\passgen1.pdb
 C:\Users\Harry\Desktop\GITHUB\-web\m3soft\source\passgen\win\milli\passgen1\passgen1\obj\Debug\passgen1.options.resources
 C:\Users\Harry\Desktop\GITHUB\-web\m3soft\source\passgen\win\milli\passgen1\passgen1\obj\Debug\passgen1.genorator.resources
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\bin\Debug\passgen1.exe.config
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\bin\Debug\passgen1.exe
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\bin\Debug\passgen1.pdb
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.csprojAssemblyReference.cache
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.FormM.resources
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.genorator.resources
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.input_num.resources
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.options.resources
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.Properties.Resources.resources
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.csproj.GenerateResource.cache
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.csproj.CoreCompileInputs.cache
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.exe
+C:\Users\harry\Documents\Github\PassGenm\windows\passgen1\passgen1\obj\Debug\passgen1.pdb
