@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Password Genorator milli</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+
+  <script type="text/javascript">
+  var fs = require('fs');
+  var pwd = "";
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+    function mkpass(name){
+      pwd = "";
+      var l = document.getElementById("len_pwd").value;
+      var c =0;
+
+
+      while (c<l){
+        c++;
+        var x = (getRandomInt(95))+32;
+        //alert(String.fromCharCode(x))
+        pwd+=String.fromCharCode(x);
+
+      }
+      document.getElementById(name).value = pwd;
+    }
+    function save(){
+
+      try {
+        fs.writeFileSync('password.txt', pwd, 'utf-8');
+        alert("File saved in password.txt")
+      }
+      catch(e) { alert('Failed to save the file !'); }
+
+    }
+    function copy(pass){
+      var copyText = document.getElementById(pass);
+
+      /* Select the text field */
+      copyText.select();
+
+      /* Copy the text inside the text field */
+      document.execCommand("copy");
+    }
+    function rangechng(){
+      document.getElementById("len_lb").innerHTML = document.getElementById("len_pwd").value;
+    }
+
+  </script>
+  <body>
+
+    <input type="button" onclick="mkpass('password')" class="btn1" value="Genorate">
+    <input type="text" id="password" class="tb"><br/>
+    <input type="button" onclick="save()" class="btn" value="Save">
+    <input type="button" onclick="copy('password')" class="btn" value="Copy">
+    <output id="len_lb" name="result" width="50px">Hey</output>
+    <input class="range" type="range" onchange="rangechng()" id="len_pwd" value="8" min="0" max="1024">
+
+    <!--<br/><button type="button" onclick="location.reload()" name="button">Reload</button>-->
+  </body>
+
+</html>
