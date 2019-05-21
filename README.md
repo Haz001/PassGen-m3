@@ -26,7 +26,8 @@ I am not resposible for any damage that may be caused by this application.
 I can <b>NOT</b> recover passwords made by this application.</span>
 ## Versions:
 
-<a href="https://github.com/Haz001/PassGen-m3/releases/tag/1.0.2me">1.0.0.1m</a> - Linux
+<a href="https://github.com/Haz001/PassGen-m3/releases/tag/1.0.2me">1.0.2me</a> - Linux - Current
+<a href="https://github.com/Haz001/PassGen-m3/releases/tag/1.0.1me">1.0.1me</a> - Linux
 ## Other info
 You can use any code in this repository, just be nice and add a link or reference me.
 I am panning a windows release.
