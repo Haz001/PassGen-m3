@@ -30,5 +30,4 @@ I can <b>NOT</b> recover passwords made by this application.</span>
   
 ## Other info
 You can use any code in this repository, just be nice and add a link or reference me.
-I am panning a windows release.
-No planned Mac release (but would add link to anyone that ports it)
+I am panning a Windows and Mac release.
